@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Checkup</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <h1>Home Checkup</h1>
+        <form
+          method="POST"
+          action=""
+          onsubmit="redirectToProvidedLink(); return false;"
+        >
+          <div class="txt_field">
+            <input type="text" name="name" required />
+            <span></span>
+            <label>Name</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" name="address" required />
+            <span></span>
+            <label>Address</label>
+          </div>
+          <div class="txt_field">
+            <input type="tel" name="phoneNumber" required />
+            <span></span>
+            <label>Phone Number</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" name="issue" required />
+            <span></span>
+            <label>Issue</label>
+          </div>
+          <input type="submit" name="submit" value="Pay and Book" />
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function redirectToProvidedLink() {
+        // Get the values from the form if needed
+        // var name = document.getElementsByName('name')[0].value;
+        // var address = document.getElementsByName('address')[0].value;
+        // var phoneNumber = document.getElementsByName('phoneNumber')[0].value;
+        // var issue = document.getElementsByName('issue')[0].value;
+
+        // Example link, replace it with your desired URL
+        var redirectTo = "https://buy.stripe.com/test_eVa6oqfrcc3P7Xa3cc";
+
+        // Redirect to the provided link
+        window.location.href = redirectTo;
+      }
+    </script>
+  </body>
+</html>
